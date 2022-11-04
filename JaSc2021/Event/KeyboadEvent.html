@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        
+        }
+        .main_cont{
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .row input
+        .row h2{
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_cont">
+        <div class="row">
+            <h2> this function is tragger when the user is press any key </h2>
+            <br>
+            <input  onkeypress='keyPress()'  id="inputBox" type="text">
+            <br>
+            <p id="getKeyCode"></p>
+        </div>
+    </div>
+
+    <script src="./9_May_KeyboardEvent.js"></script>
+</body>
+</html>

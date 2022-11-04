@@ -1,0 +1,11 @@
+ADVANCE JAVASCRIPT
+
+1. Event Propagation (Event Bubbling and Event Capturing)
+2. Higher Order Function
+3. Callback Function
+4. Function Currying (We will see Async JS section)
+5. CallBack Hell
+6. BONUS Section JSON
+7. Fetch API
+8. Async-Await**
+9. Error Handling in JS

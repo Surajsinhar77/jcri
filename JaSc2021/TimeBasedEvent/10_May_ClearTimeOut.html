@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Time events</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+            background-color: slateblue;
+        
+        }
+        .main_cont{
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+            color: yellowgreen;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            background-color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_cont">
+        <div class="row">
+            <h3>Do You want to Know My name ?</h3>
+            <br>
+            <button id="btn"> Click here </button>
+            <p id="getKeyCode"></p>
+            <br>
+            <button id="btn2"> Stop it </button>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        const getAllow = document.getElementById('btn');
+        const getStop = document.getElementById('btn2');
+        const ShowName = document.getElementById('getKeyCode');
+
+        getAllow.addEventListener('click', ()=>{
+            
+            let StopPr = setTimeout(()=>{
+                alert("My name is Suraj Sinha")
+                ShowName.innerHTML ="SurajSinha";
+            },1000)     //## NOTE: 1second = 1000minisecond
+
+                getStop.addEventListener('click',()=>{
+                clearTimeout(StopPr);
+            });
+
+        });
+        
+    </script>
+</body>
+</html>

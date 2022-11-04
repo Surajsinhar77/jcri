@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Enter and Leave</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: blueviolet;
+            box-sizing: border-box;
+        }
+        .mainCont{
+            width: 75%;
+            margin: 0 auto;
+            align-items: center;
+            
+        }
+        .box{
+            
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: yellowgreen;
+            text-align: center;
+            position: absolute;
+            top: 38%;
+            left: 45%;
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="mainCont">
+            <div class="row">
+                <div onmouseenter="mouseEnt()" onmouseleave='mouseLev()' id="smallBox" class="box" >
+            </div>
+        </div>
+
+        <script>
+            var getElt = document.getElementById('smallBox');
+            mouseEnt =()=>{
+                getElt.style.backgroundColor = 'red';
+            }
+
+            mouseLev =() =>{getElt.style.backgroundColor = 'yellowgreen';}
+            
+            // var gtE = document.getElementById('smallBox');
+            // gtE.addEventListener('mouseenter',()=>{gtE.style.backgroundColor = 'red'});
+            // gtE.addEventListener('mouseleave',()=>{gtE.style.backgroundColor = 'green'});
+        </script>
+
+        
+</body>
+</html>

@@ -1,0 +1,7 @@
+Documentation
+
+* JavaSccript functions use in Animated Therometer
+
+    1. Normal function or Fat Arrow Function
+    2. setTimeout function
+    3. setInterval function

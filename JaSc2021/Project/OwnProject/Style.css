@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainC{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    height: 100vh;
+    /* background-color: blueviolet; */
+    align-items: center;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 20%;
+    height: 200px;
+    background-color: aquamarine;
+}
+button{
+    width: auto;
+    padding: 5px;
+}
+
+.addBC{
+    background-color: blueviolet;
+}
+
+.removeBC{
+    background-color: aquamarine;
+}

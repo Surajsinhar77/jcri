@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types Of Event Calling</title>
+    <style>
+        .main_conta{
+            width: 75%;
+            margin-bottom: 100px;
+            margin: 0 auto;
+            margin-top: 20%;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main_conta">
+        <!-- First way to calling event Function (Inline) -->
+        <div class="row">
+            <button class="btn1" onclick="alert('I am the fisrt way')" >Click me</button>
+        </div><br>
+
+        <!-- Second way of calling Event function -->
+        <div class="row">
+            <button onclick="Eventfunc()">Click me</button>
+        </div><br>
+
+        <!-- Third way of calling Event function -->
+        <div class="row">
+            <button id="btn03" class="btn3">Click me</button>
+        </div><br>
+
+        <!-- Fourth way of calling Event function -->
+        <div class="row">
+            <button class="btn4">Click me</button>
+        </div><br>
+    </div>
+</body>
+<script>
+    // Second way of calling function
+        Eventfunc = () =>{
+            alert('I am the second way of calling Event function')
+        }
+        
+    // <!-- Third way of calling Event  -->
+        const thirdOne = document.querySelector(".btn3");
+        // const thirdOne = document.querySelector(".btn3");
+        // console.log(thirdOne);
+        thirdOne.onclick = () =>{ alert("i am the thisrt way of calling function") } 
+        
+
+        // Fourth way of calling function
+        const  fourthOne = document.querySelector(".btn4");
+        fourthOne.addEventListener('click', ()=>{ alert(" here i am  the last and latest one") } )
+        // addEventListener can run two function at one time 
+</script>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./7_ApLeapYrCllg.js"></script>
+    <!-- <script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Done";
+}
+</script> -->
+    <!-- <script>
+    function getLeapYear(){
+
+var year = document.getElementById("year").value;
+
+if (year%4==0 && year%100 !=0 || year %400==0 ){
+    // console.log("It is leap Year");
+    document.getElementById("ans").innerHTML = "It is Leap year"
+}
+else{
+    // console.log("It is not leap Year");
+    document.getElementById("ans").innerHTML = "It is not Leap year"
+}
+
+}
+</script> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .demo {
+            width: 80px;
+            height: 30px;
+            border: 2px solid black;
+        }
+
+        input {
+            width: 80px;
+            height: 30px;
+            border: 2px solid red;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        p {
+            color: green;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            /* background-color: blueviolet; */
+        }
+
+        h1 {
+            margin: 0 auto;
+        }
+
+        .box {
+            width: 75%;
+            /* background-color: blue; */
+            margin: 0 auto;
+            margin-top: 25%;
+            text-align: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 100px;
+        }
+
+        .header {
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Leap Year Finder</h1>
+        </div>
+        <div class="box">
+            <!-- <h1>A Web Page</h1> -->
+            <!-- <p>A Paragraph</p> -->
+            <form action="method">
+                <label for="">Enter the Year &nbsp; </label>
+                <input id="year" type="number" placeholder="&nbsp; year" required>
+                <p id="ans">:&nbsp; </p>
+                <button id="demo" class="demo" type="button" onclick="getLeapYear()">Submit</button>
+                <button class="demo" type="reset">Clear</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

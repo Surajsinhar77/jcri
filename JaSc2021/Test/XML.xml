@@ -1,0 +1,20 @@
+<?xml version="1.1"?>
+<!DOCTYPE address [
+<!ELEMENT address (Name,email,phonno)>
+<!ELEMENT Name (fname,lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phonno (#PCDATA)>
+]>
+
+
+<address>
+	<Name>
+		<fname>Suraj</fname>
+		<lname>Sinha</lname>
+	</Name>
+	<email>wifeReetu@gmail.com</email>
+	<phonno>7638798234</phonno>
+</address>
+

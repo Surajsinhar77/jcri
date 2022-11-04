@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main_Continer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 75%;
+            align-items: center;
+            height: 100vh;
+            margin: 0 auto;
+        }
+        .outer_box{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            align-items: center;
+            width: 50vh;
+            height: 40vh;
+            background-color: rgba(174, 243, 174, 0.87);
+            border: 5px solid rgb(53, 245, 53);
+        }
+        .inner_box{
+            width: 50%;
+            height: 40%;
+            background-color: rgb(250, 176, 40);
+            border: 5px solid rgba(199, 131, 4, 0.89);
+        }
+    </style>
+</head>
+<body>
+    <div class="main_Continer">
+            <div class="outer_box">
+                <div class="inner_box">
+
+                </div>
+            </div>
+    </div>
+</body>
+<!-- javaScript source linked -->
+<script src="./11_May_EventPropagation.js"></script>
+</html>

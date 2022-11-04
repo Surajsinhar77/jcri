@@ -1,0 +1,26 @@
+/* Bulb light on of CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: "Poppins";
+}
+.main_container {
+    display: flex;
+    margin:0 auto;
+    flex-direction: column;
+    width: 75%;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+button{
+    padding: 8px;
+}
+.heading{
+    margin-bottom: 100px;
+}

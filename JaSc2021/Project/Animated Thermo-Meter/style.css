@@ -1,0 +1,31 @@
+/* Animated Thermometer */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightyellow;
+    font-family: "Poppins";
+}
+.main_container{
+    width: 100vw;
+    background-color: #2a364f;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.inner{
+    /* background-color: chocolate; */
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+.heading{
+    color: white;
+    padding: 30px;
+    text-shadow: 0px 1px 8px rgba(255, 255, 255, 0.5);
+    font-size: 130px;
+}

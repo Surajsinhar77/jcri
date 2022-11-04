@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Best Jokes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: pink;
+            font-family: "Poppins";
+        }
+        .container {
+            display: flex;
+            width: 75%;
+            height: 100vh;
+            margin: 0 auto;
+            align-items: center;
+        }
+        .row {
+            display: flex;
+            width: 600px;
+            height: 250px;
+            background-color: white;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .col{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        h3 {
+            border-bottom: 2px solid blueviolet;
+            padding-bottom: 7px;
+            font-size: medium;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        #nxtbtn{
+            margin-bottom: 30px;
+            width: 80px;
+            height: 30px;
+            /* border-radius: 5px; */
+            cursor: pointer;
+            border: 1.5px solid blueviolet;
+            background-color: pink;
+        }
+        #nxtbtn:hover{
+            background-color: white;
+            box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.027);
+        }
+        #joke{
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <h3 class="Heading">😆 Best Joke to make my day 😆</h3>
+                <div id="joke"></div>
+                <button id="nxtbtn">Next Joke</button>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="./BestJoke.js"></script>
+</html>

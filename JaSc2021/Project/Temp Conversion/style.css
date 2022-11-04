@@ -1,0 +1,30 @@
+/* Css for Temp Conveter */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+}
+.main_container{
+    width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+    display: grid;
+    place-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgba(255, 137, 155, 0.904);
+    place-items: center;
+}
+button, #Selectone, input{
+    width: 90px;
+    padding: 5px;
+}
+option{
+    padding: 5px;
+}

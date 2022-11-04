@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocElementFinder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_contaner {
+            width: 75%;
+            text-align: center;
+            border: 3px solid green;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .Child_one {
+            width: 50%;
+            height: 20vh;
+            text-align: center;
+            border: 3px solid green;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .Child_two {
+            width: 50%;
+            height: 20vh;
+            text-align: center;
+            border: 3px solid green;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .Child_three {
+            width: 50%;
+            height: 20vh;
+            text-align: center;
+            border: 3px solid green;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_contaner"> 
+        <div class="Child_one">
+            <p> First Child</p>
+            <h2 id="no1" class="no1">I am the heading 1</h2>
+        </div>
+        <div class="Child_two">
+            <p> Second Child</p>
+            <h2 id="no2" class="no2">I am the heading 2</h2>
+        </div>
+        <div class="Child_three">
+            <p> third Child</p>
+            <h2 class="no3">I am the heading 3</h2>
+        </div>
+        <br>
+        <button onclick="changeMe()">Click Me</button>
+        <br><br>
+    </div>
+    <p id="firstOne" class="firstOne"> 7055543 </p>
+    <script>
+
+        changeMe = () => {
+            var red = document.body.firstElementChild.firstElementChild;
+            red.style.color = "red";
+            // var green = document.body.firstElementChild.firstElementChild.nextElementSibling;
+            // green.style.color = "yellow";
+            // var blue = document.body.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling;
+            // blue.style.color = "blue";
+
+            // Quary selector   (querySelector)
+            const Child_two = document.querySelector('.Child_two');
+            Child_two.style.color = "green";
+
+            const Child_three = document.querySelector('.Child_three');
+            Child_three.style.color = "blue";
+
+            // Changing of InnerHTML BY query selector
+            document.querySelector('.no1').innerHTML = "u can go";
+
+            // Changing of InnerHTML BY Id
+            document.getElementById('no2').innerHTML = "u can go second";
+
+
+            // getting values of tags 
+            var valStore = document.querySelector('.firstOne').innerHTML;
+            console.log(valStore);
+
+            // I DONT GET THE VALUE OF ELEMENT BY USING THE getElementsByClassName()
+        }
+    </script>
+</body>
+
+</html>

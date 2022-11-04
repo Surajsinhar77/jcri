@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: blueviolet;
+            box-sizing: border-box;
+        }
+        .mainContainer{
+            width: 70%;
+            margin: 0 auto;
+            text-align: justify;
+            font-family: cursive;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="row">
+            <p onmouseup="mouseU()" onmousedown="mouseD()" id="mouseEvnt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere tempora, rerum ad ipsum quae impedit provident, odio in modi dolore, perferendis quod rem nihil vero consequatur fugit labore doloribus placeat? Tempore quibusdam dolorem quis eius quisquam rerum? Unde iure nesciunt voluptate, dolorum quibusdam inventore voluptas amet debitis itaque quos quaerat.</p>
+        </div>
+    </div>
+    <!-- <script>
+        mouseU = ()=>{var forUP = document.getElementById('mouseEvnt')
+            forUP.style.color = 'green'}
+
+        mouseD = ()=>{var forDown = document.getElementById('mouseEvnt')
+            forDown.style.color = 'red'}
+    </script> -->
+    <script src="./9_May_mouseEvent.js"></script>
+</body>
+</html>

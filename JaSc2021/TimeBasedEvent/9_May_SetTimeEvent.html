@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time events</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+            background-color: slateblue;
+        
+        }
+        .main_cont{
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+            color: yellowgreen;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            background-color: white;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_cont">
+        <div class="row">
+            <h3>Do You want to Know My name ?</h3>
+            <br>
+            <button id="btn"> Click here </button>
+            <p id="getKeyCode"></p>
+        </div>
+    </div>
+
+    <script>
+        const getAllow = document.getElementById('btn');
+        const ShowName = document.getElementById('getKeyCode');
+
+        // ShowingName = ()=>{
+        //     ShowName.innerHTML ="loading...";
+        //     setTimeout(()=>{
+        //         ShowName.innerHTML ="Suraj Sinha";
+        //     },1000)
+        // }
+        // getAllow.addEventListener('click',ShowingName);
+
+        getAllow.addEventListener('click', ()=>{
+            setTimeout(()=>{
+                ShowName.innerHTML ="SurajSinha";
+            },100) //#NOTE: 1second = 1000minisecond
+        });
+    </script>
+</body>
+</html>

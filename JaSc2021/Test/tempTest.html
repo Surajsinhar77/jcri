@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    .contnt{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+        .box{
+            width: auto;
+            height: auto;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="contnt">
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dicta libero unde asperiores, placeat rerum nobis illum modi. Perspiciatis dolor temporibus fugiat, eos nisi eveniet amet id corporis ullam ex?</p>
+        </div>
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dicta libero unde asperiores, placeat rerum nobis illum modi. Perspiciatis dolor temporibus fugiat, eos nisi eveniet amet id corporis ullam ex?</p>
+        </div>
+        <div class="box">
+            <script type="text/javascript" language="javascript">
+                var aax_size='300x250';
+                var aax_pubname = 'surajsinha77-21';
+                var aax_src='302';
+                </script>
+                <script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>
+        </div>
+    </div>
+    
+</body>
+<script>
+    const gtElement = document.querySelector('.contnt');
+    gtElement.style.color = 'red'; 
+
+
+    const getbox = document.querySelector('.box');
+    
+    getbox.addEventListener('mousemove',()=>{
+        // getbox.style.backgroundColor = "green";
+        getbox.classList.add('hifi');
+    });
+</script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Events</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+            background-color: slateblue;
+        
+        }
+        .main_cont{
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+            color: yellowgreen;
+        }
+        .row input
+        .row h2{
+            margin: 0 auto;
+            text-align: center;
+        }
+        input{
+            height: 30px;
+            background-color: white;
+        }
+        select ,option{
+            height: 30px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_cont">
+        <div class="row">
+            <label for="name">Your Name</label>
+            <input id="inputBox" type="text"><br>
+            <br>
+            <label for="text">Your fav language</label>
+            <select name="selection" id="choice" onchange="keyPress()">
+                <option value="java">Choice one..</option>
+                <option value="java">java</option>
+                <option value="javaScript">javaScript</option>
+                <option value="Python">Python</option>
+            </select>
+            <br>
+            <p id="getKeyCode"></p>
+        </div>
+    </div>
+
+    <script>
+
+        // onchange  event 
+        // function keyPress(){
+        //     var getvalue= document.getElementById('inputBox').value;
+        //     console.log(getvalue);
+        //     var getSelectValue= document.getElementById('choice').value;
+        //     document.getElementById('getKeyCode').innerHTML = `The User Name is '${getvalue}' and choice is '${getSelectValue}' ` ;
+        // }
+
+        // By refrence 
+        const getRef = document.getElementById('choice');
+        getRef.addEventListener('change', ()=>{
+            const getvalue= document.getElementById('inputBox').value;
+            const getSelectValue = document.getElementById('choice').value;
+            
+            document.getElementById('getKeyCode').innerHTML = `The User Name is '${getvalue}' and choice is '${getSelectValue}'`;
+        });
+
+    </script>
+</body>
+</html>

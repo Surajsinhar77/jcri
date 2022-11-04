@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+            background-color: slateblue;
+
+        }
+
+        .main_cont {
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+            color: yellowgreen;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            background-color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_cont">
+        <div class="row">
+            <h3>Do You want to Know to Start ContDown ?</h3>
+            <p id=ContDown></p>
+            <br>
+            <div class="row2">
+                <button id="btn"> Click here </button>
+                <br><br>
+                <button id="btn2"> Stop it </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const startBtn = document.getElementById('btn');
+        const stopBtn = document.getElementById('btn2');
+        const ContDn = document.getElementById('ContDown');
+        var Num = 0;
+
+        // Method 2
+        startBtn.addEventListener('click', () => {
+            var stopInt = setInterval(() => {
+                ContDn.innerHTML = Num;
+                Num++;
+            }, 100)
+            // To Stop the Watch  
+            stopBtn.addEventListener('click', () => {
+                clearInterval(stopInt);
+            });
+        });
+
+
+            // Method-2
+            // contDown = () =>{
+            //     ContDn.innerHTML = `Loading....`;
+            //     contMain = () =>{
+            //         ContDn.innerHTML = Num;
+            //         Num++;
+            //     }
+            //     setInterval(contMain,100);
+            // }
+            // startBtn.addEventListener('click', contDown);
+
+    </script>
+</body>
+
+</html>
+
+<!-- Clear Interval -->
+<!-- getStop.addEventListener('click',()=>{ 
+    //     clearTimeout(StopPr);
+    // }); -->

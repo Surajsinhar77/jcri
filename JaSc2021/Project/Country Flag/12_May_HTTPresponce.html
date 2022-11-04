@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 01: Contry Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+        /* body{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        } */
+        .main-contaner{
+            display: flex;
+            width: 75%;
+            height: 100vh;
+            margin: 0 auto;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            justify-content: space-between;
+            background-color: lightgreen;
+            border-radius: 30px;
+            align-items: flex-end;
+        }
+        .line{
+            text-align: center;
+            display: flex;
+            width: 100%;
+            height: 60px;
+            /* background-color: black; */
+            justify-content: space-around;
+            border-top: 2px solid grey;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            align-items: center;
+        }
+        .row{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            justify-content: space-around;
+            align-items: center;
+        }
+        p{
+            font-size: medium;
+        }
+        .flag_img{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-around;
+            align-items: center; 
+        }
+        .card:hover{
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+            height: 420px;
+            margin: 0 auto;
+            justify-content: space-between;
+            background-color: lightgreen;
+            border-radius: 30px;
+            align-items: flex-end;
+        }
+        
+        /* .line h6{
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="main-contaner">
+        <div class="card">
+                <div class="row">
+                    <img id="Flag_img2" src="" width="200" alt="">
+                </div>
+            <div class="line">
+                <h6 class="lower_part1">Name <p class="country_name"></p> </h6>
+                <h6 class="lower_part2">Language<p class="country_language"></p></h6>
+                <h6 class="lower_part3">Captial<p class="country_captial"></p></h6>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Script -->
+<script>
+    // Refrence Element   ------------------
+    const getcard = document.querySelector('.card');
+    const getcty = document.querySelector('.country_name');
+
+    // ##XMLHTTPrequest    ----------------
+    let request = new XMLHttpRequest();
+    request.open('GET','http://restcountries.eu/rest/v2/name/germany',true);
+    request.send();
+
+    // Get response
+    request.addEventListener('load',function(){      // this is not working with arrow Function
+        // console.log(this.responseText);
+            const [data] = JSON.parse(this.responseText) 
+            console.log(data.name);
+            console.log(data.flag);
+        getcty.innerHTML = data.name;
+        document.getElementById('Flag_img2').src = data.flag;
+        document.querySelector('.country_captial').innerHTML = data.capital;
+        var [datalang] = data.languages;
+        console.log(datalang);
+        document.querySelector('.country_language').innerHTML = datalang.name;
+    });
+</script>
+</html>

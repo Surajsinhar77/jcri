@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins";
+}
+.main_continer{
+    width: 100vw;
+    height: 100vh;
+    background-color: navy;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_continer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+i{
+    font-size: 50px;
+}
+
+i, h1 ,span{
+    color: white;
+    padding: 5px;
+}
+h1{
+    font-size: 80px;
+}
